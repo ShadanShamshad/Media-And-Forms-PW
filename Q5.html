@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5. Solution</title>
+</head>
+<body>
+    <!-- Create a sign-up and sign-in form with proper validation
+    (a) Sign up form should have a first name, last name, email, password, confirm password, age, gender,and agree to terms and conditions fields at minimum (You can add any other if you like)
+    (b) Sign in form should have email, password fields -->
+    <!-- >Ex: First name, last name, email cannot be less than 3 characters, age cannot be negative and cannot be 
+            greater than 150, fields are required, etc. -->
+    <center>
+    <div style="width: 400px;">
+        <form action="post" style="border:1px solid #ccc">
+            <h1><strong>Sign-Up Form</strong></h1>
+            <fieldset>
+                <legend><strong>Personal Details</strong></legend>
+                <label for="fname"><b>First Name :</b></label>
+                <input type="text" id="fname" required minlength="3">
+                <br>
+                <br>
+                <label for="lname"><b>Last Name :</b></label>
+                <input type="text" id="lname" required minlength="3">
+                <br>
+                <hr>
+                <label for="email"><b>Email Id :</b></label>
+                <input type="email" id="email" required  minlength="3">
+                <br>
+                <br>
+                <label for="password"><b>Password :</b></label>
+                <input type="password" id="password" required>
+                <br>
+                <br>
+                <label for="cpassword"><b>Retype Password:</b></label>
+                <input type="password" id="cpassword" required>
+                <br>
+                <hr>
+                <label for="male"><b>Male:</b></label>
+                <input type="radio" name="" id="male">
+                <label for="female"><b>Female:</b></label>
+                <input type="radio" name="" id="female">
+                <br>
+                <hr>
+                <label for="date"><b>Date Of Birth:</b></label>
+                <input type="date" name="" id="date">
+                <br>
+                <hr>
+                <label for="age"><b>Age:</b></label>
+                <input type="number" name="" id="age" required min="1" max="150">
+                <br>
+                <hr>
+                <label for="address"><b>Address:</b></label>
+                <textarea type="textarea" id="address" cols="30" rows="3"></textarea>
+                <br>
+                <hr>
+                <input type="checkbox" name="" id="terms">
+                <label for="terms"><b>Yes,I agree with the Terms & Conditions.</b></label>
+                <br>
+                <hr>
+                <label for="sign-up"></label>
+                <button type="submit" value="Sign-Up" id="sign-up" style="background-color: blue; color: #fff;" ><b>Sign-Up</b></button>
+                <label for="sign-in"></label>
+                <a href="./signin.html" target="_blank" type="submit" value="Sign-In" id="sign-in" style="background-color: #eee019;"  ><b>Sign-In</b></a>
+            
+            </fieldset>
+        
+            </form>
+    </center>
+    </div>
+    
+</body>
+</html>
